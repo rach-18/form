@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        div {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form method="get">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div>
+                <label for="firstName">Firstname</label>
+                <input type="text" name="firstName">
+            </div>
+            <div>
+                <label for="middleName">Middlename:</label>
+                <input type="text" name="middleName">
+            </div>
+            <div>
+                <label for="lastName">Lastname:</label>
+                <input type="text" name="lastName">
+            </div>
+            <div>
+                <label for="course">Course:</label>
+                <select>
+                    <option value="course" disabled>Course</option>
+                    <option value="bca">BCA</option>
+                    <option value="bba">BBA</option>
+                    <option value="btech">B.Tech</option>
+                    <option value="mba">MBA</option>
+                    <option value="mca">MCA</option>
+                    <option value="mtech">M.Tech</option>
+                </select>
+            </div>
+            <div>
+                <label for="gender">Gender:</label> <br>
+                <input name="gender" type="radio"> Male <br>
+                <input name="gender" type="radio"> Female <br>
+                <input name="gender" type="radio"> Other <br>
+            </div>
+            <div>
+                <label for="dob">DOB</label>
+                <input type="datetime-local"> <br>
+                <label for="phone">Phone:</label>
+                <input type="text" value="+91" style="width: 25px;" disabled>
+                <input type="text">
+            </div>
+            <div>
+                <label for="address">Address</label> <br>
+                <textarea cols="80" rows="5"></textarea>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password">
+            </div>
+            <div>
+                <label for="repassword">Re-type password:</label>
+                <input type="password" name="password">
+            </div>
+            <div>
+                <input type="checkbox">Agree to terms and conditions
+            </div>
+            <div>
+                <label for="file">Choose File</label>
+                <input type="file" name="file">
+            </div>
+            <div>
+                <label for="color">Choose Color</label>
+                <input type="color" name="color">
+            </div>
+            <div>
+                <input type="reset" value="Reset">
+                <input type="button" value="Submit">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
